@@ -1,7 +1,8 @@
 .header
 	font-size: 38px
 	color: white
-	background-color: $pseudoBlackBG
+	background: url(../img/header_bg.jpg) no-repeat 
+	background-position: 50% 207px
 	.logo
 		display: inline-block
 		vertical-align: middle
@@ -11,7 +12,9 @@
 	.nav
 		display: flex
 		align-items: center
+		background-color: $pseudoBlackBG
 		padding: 0 266px 0 321px
+		margin-bottom: 380px
 		.menu
 			//vertical-align: middle
 			display: inline-block
@@ -74,3 +77,42 @@
 				font-size: 18px
 				font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 				color: #fff
+	.big-text
+		display: inline-block
+		font-family: 'Lato-Black', Arial, Helvetica, sans-serif
+		font-size: 83px
+		color: white
+		text-shadow: 2px 8px black
+		margin-left: 265px
+		margin-bottom: 50px
+		.decor-bar
+			background-color: #fff
+			width: 338px
+			height: 10px
+			border-radius: 5px
+			margin-right: 0
+			margin-left: auto
+			margin-top: 27px
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				background-color: #fff
+				border-radius: 5px
+				width: 12px
+				height: 10px
+				left: -78px
+			&::after
+				content: ""
+				position: absolute
+				background-color: #fff
+				border-radius: 5px
+				width: 24px
+				height: 10px
+				left: -38px				
+	.mid-text
+		display: block
+		font-family: 'Lato', Arial, Helvetica, sans-serif
+		font-size: 50px
+		margin-left: 360px
+
