@@ -1,4 +1,67 @@
 .header
-	font-size: 33px
+	font-size: 38px
+	color: white
+	background-color: $pseudoBlackBG
 	.logo
+		display: inline-block
+		vertical-align: middle
+		line-height: 0
+		//margin-bottom: 15px
+		+sprite($logo)
 	.nav
+		display: flex
+		align-items: center
+		padding: 0 266px 0 321px
+		.menu
+			//vertical-align: middle
+			display: inline-block
+			margin-right: 119px
+			margin-left: auto
+			//padding-left: 183px
+			&__item
+				display: inline-block
+				padding: 0 11px 0 17px
+				margin-right: 26px 
+				line-height: 208px
+				position: relative
+				&:hover
+					//
+				&:last-of-type
+					margin-right: 0
+				&::before
+					content: ""
+					position: absolute
+					left: 0
+					right: 0
+					top: 0
+					height: 2px
+					background-color: #fff
+		.login
+			//vertical-align: middle
+			display: inline-block
+			text-align: center
+			text-decoration: none
+			margin-right: 68px
+			&__icon
+				display: inline-block
+				margin-bottom: 9px
+				+sprite($login)
+			&__text
+				display: block
+				font-size: 18px
+				font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+				color: #fff
+		.reg
+			//vertical-align: middle
+			display: inline-block
+			text-align: center
+			text-decoration: none
+			&__icon
+				display: inline-block
+				margin-bottom: 9px
+				+sprite($register)
+			&__text
+				display: block
+				font-size: 18px
+				font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+				color: #fff
