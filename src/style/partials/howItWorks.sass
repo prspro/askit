@@ -1,0 +1,54 @@
+.howItWorks
+    color: $pseudoBlueTxt2
+    font-family: 'Lato', Arial, Helvetica, sans-serif
+    font-size: 36px
+    padding: 155px 0 185px 0 
+    text-align: center
+    .big-text
+        display: inline-block
+        text-align: center
+        font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+        font-size: 83px
+        margin-bottom: 155px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 102px
+            height: 6px
+            bottom: -25px
+            left: 7px
+            background-color: $pseudoBlueBG
+            border-radius: 4px
+        &::after
+            content: ""
+            position: absolute
+            width: 16px
+            height: 6px
+            bottom: -25px
+            left: 128px
+            background-color: $pseudoBlueBG
+            border-radius: 4px        
+    .cols
+        display: flex
+        justify-content: space-between
+        line-height: 1.2
+        padding: 0 200px
+        &__item
+            min-width: 390px
+            .picture
+                margin-left: auto
+                margin-right: auto
+                display: block
+                border: 1px solid $pseudoBlueBG
+                margin-bottom: 74px
+                &--mobile
+                    +sprite($phone)
+                    background-color: $pseudoBlueBG
+                &--discuss
+                    +sprite($discuss)
+                &--qr
+                    +sprite($qr)
+                &--favorite
+                    +sprite($favorites)
+            .text
