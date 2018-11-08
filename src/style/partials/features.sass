@@ -1,0 +1,94 @@
+.features
+	padding: 127px 0 146px 0 
+	color: $pseudoBlueTxt2
+	text-align: center
+	.big-text
+		display: inline-block
+		//text-align: center
+		font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+		font-size: 83px
+		line-height: 0.8
+		letter-spacing: 15px
+		position: relative
+		margin-bottom: 120px
+		&::before
+			position: absolute
+			content: ""
+			width: 102px
+			height: 6px
+			background-color: $pseudoBlueTxt2
+			border-radius: 3px
+			bottom: -23px
+			left: 5px
+		&::after
+			position: absolute
+			content: ""
+			width: 16px
+			height: 6px
+			background-color: $pseudoBlueTxt2
+			border-radius: 3px
+			bottom: -23px
+			left: 123px
+	.cols
+		display: flex
+		justify-content: center
+		&__item
+			width: 518px
+			position: relative
+			&::after
+				content: ""
+				position: absolute
+				height: 164px
+				width: 2px
+				background-color: $pseudoBlueBG
+				top: 0
+				right: 0
+			&::before
+				content: ""
+				position: absolute
+				height: 164px
+				width: 2px
+				background-color: $pseudoBlueBG
+				bottom: 0
+				right: 0			
+			&:last-of-type
+				&::after
+					display: none
+				&::before
+					display: none	
+			.feature-box
+				display: block
+				position: relative
+				&::after
+					content: ""
+					position: absolute
+					width: 426px
+					height: 2px
+					background-color: $pseudoBlueBG
+					bottom: 0
+					left: 50%
+					transform: translateX(-50%)
+				&:last-of-type
+					&::after
+						display: none
+				//margin-bottom: 27px
+				padding: 20px 0 43px 0
+				.pic
+					display: inline-block
+					&--microphone
+						+sprite($microphone)
+					&--medal
+						+sprite($medal)
+					&--bars
+						+sprite($bar-chart)
+					&--flag
+						+sprite($flag)
+					&--graph
+						+sprite($insight)
+					&--block
+						+sprite($padlock)   
+				.text
+					display: block
+					font-family: 'Lato-Bold', Arial, Helvetica, sans-serif
+					font-size: 42px
+					color: $pseudoBlueTxt2             
