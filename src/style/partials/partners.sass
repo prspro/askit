@@ -1,0 +1,96 @@
+.partners
+	padding: 34px 0 133px 0
+	background: url(../img/partners_bg.jpg) no-repeat
+	background-position: 50% 0
+	text-align: center
+	.big-text
+		display: inline-block
+		margin-bottom: 153px
+		color: white
+		line-height: 0.8
+		font-size: 83px
+		font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+		letter-spacing: 10px
+		position: relative
+		&::after
+			content: ""
+			position: absolute
+			width: 102px
+			height: 6px
+			background-color: #fff
+			right: 15px
+			bottom: -24px
+			border-radius: 3px
+		&::before
+			content: ""
+			position: absolute
+			width: 16px
+			height: 6px
+			background-color: #fff
+			right: 137px
+			bottom: -24px
+			border-radius: 3px
+	.cols
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__item
+			display: inline-block
+			&--mccann
+				+sprite($mccann)	
+			&--un-women
+				+sprite($un-women)
+			&--accenture
+				+sprite($accenture)
+			&--cisco
+				+sprite($cisco)
+			&--eventbrite
+				+sprite($eventbrite)
+			&--zappos
+				+sprite($zappos)
+			&--siemens
+				+sprite($siemens)							
+	.arrow
+		display: inline-block
+		position: relative
+		width: 160px
+		height: auto
+		//border: 1px solid red
+		&--left
+			&::after
+				display: inline-block
+				content: ""
+				position: absolute
+				height: 2px
+				width: 40px
+				background-color: #fff
+				transform: rotate(-45deg)
+				bottom: 14px
+			&::before
+				display: inline-block
+				content: ""
+				position: absolute
+				height: 2px
+				width: 40px
+				background-color: #fff
+				transform: rotate(45deg)
+				bottom: -14px			
+		&--right
+			&::after
+				display: inline-block
+				content: ""
+				position: absolute
+				height: 2px
+				width: 40px
+				background-color: #fff
+				transform: rotate(45deg)
+				bottom: 14px
+			&::before
+				display: inline-block
+				content: ""
+				position: absolute
+				height: 2px
+				width: 40px
+				background-color: #fff
+				transform: rotate(-45deg)
+				bottom: -14px	
