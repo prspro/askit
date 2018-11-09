@@ -1,0 +1,140 @@
+.events
+	padding: 91px 0 87px 0
+	text-align: center
+	background-color: $pseudoWhiteBG
+	width: 2400px
+	margin-left: auto
+	margin-right: auto
+	.big-text
+		display: inline-block
+		color: $pseudoBlueTxt2
+		font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+		letter-spacing: 10px
+		font-size: 83px
+		line-height: 0.8
+		margin-bottom: 148px
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			width: 102px
+			height: 6px
+			background-color: $pseudoBlueBG
+			left: 7px
+			bottom: -24px
+			border-radius: 3px
+		&::after
+			content: ""
+			position: absolute
+			width: 16px
+			height: 6px
+			background-color: $pseudoBlueBG
+			left: 134px
+			bottom: -24px
+			border-radius: 3px
+	.event-bar
+		display: flex
+		justify-content: space-between
+		padding: 0 328px
+		position: relative
+		.event
+			width: 575px
+			padding-top: 60px
+			padding-bottom: 55px
+			background-position: 50% 3px
+			background-color: #fff
+			position: relative
+			&::after
+				content: ""
+				position: absolute
+				left: 0
+				right: 0
+				top: 291px
+				//background-color: $pseudoGreenBG
+				height: 5px
+			.big-text2
+				font-size: 89px
+				color: white
+				text-transform: uppercase
+				line-height: 0.8
+				&--thin
+					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+					margin-bottom: 40px
+				&--thick
+					font-family: 'Lato-Bold', Arial, Helvetica, sans-serif
+					margin-bottom: 90px
+			.pic
+				display: inline-block
+				margin-bottom: 15px
+				&--external
+					+sprite($usb-connection)
+				&--interactive
+					margin-bottom: 17px
+					+sprite($interactivity)
+				&--internal
+					+sprite($hard-disk)
+			.lil-text
+				color: black
+				font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+				font-size: 22px
+				line-height: 1.7
+				max-width: 395px
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 17px
+			.btn
+				display: inline-block
+				color: white
+				font-family: 'Lato-Medium', Arial, Helvetica, sans-serif 
+				text-decoration: none
+				font-size: 33px
+				line-height: 56px
+				padding: 0 38px 0 36px
+				border-radius: 28px
+			&--external
+				background: url(../img/event1.jpg) no-repeat
+				box-shadow: -2px 5px 10px gray
+				background-position: 50% 3px
+				background-color: #fff
+				&::after
+					background-color: $pseudoGreenBG
+				.btn
+					background-color: $pseudoGreenBG
+			&--interactive
+				z-index: 100
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				width: 654px
+				padding-top: 76px
+				padding-bottom: 62px
+				background: url(../img/event3.jpg) no-repeat
+				background-position: 50% 3px
+				background-color: #fff
+				box-shadow: -5px 7px 20px gray, 5px 0 20px gray
+				&::after
+					top: 330px
+					background-color: $pseudoOrangeBG
+				.big-text2
+					&--thin
+						margin-bottom: 46px
+				.big-text2
+					&--thick
+						margin-bottom: 85px
+				.lil-text
+					margin-bottom: 28px
+				.btn
+					font-size: 38px
+					line-height: 64px
+					background-color: $pseudoOrangeBG
+					padding: 0 42px 0 41px
+			&--internal
+				background: url(../img/event2.jpg) no-repeat
+				box-shadow: 2px 5px 10px gray
+				background-position: 50% 3px
+				background-color: #fff
+				&::after
+					background-color: $pseudoBrownBG
+				.btn
+					background-color: $pseudoBrownBG
