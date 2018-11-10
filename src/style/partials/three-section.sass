@@ -2,80 +2,17 @@
 	padding-top: 78px
 	padding-bottom: 64px
 	background-color: $pseudoBlueBG
-	max-width: 2400px
+	//max-width: 2400px
 	margin: 0 auto
 	font-family: 'Lato-Light',Arial, Helvetica, sans-serif
 	color: white
 	.container
 		position: relative
-		.v-text
-			//display: inline-block
-			position: absolute
-			color: white
-			font-size: 42px
-			line-height: 86px
-			border: 1px solid white
-			padding-right: 30px
-			padding-left: 152px
-			transform: rotate(-90deg)
-			top: 133px
-			left: 10px
-			letter-spacing: 12px
-			&::before
-				position: absolute
-				content: ""
-				height: 26px
-				width: 26px
-				top: 50%
-				left: 21px
-				transform: translateY(-50%)
-				background-color: white
-				border-radius: 50%
-			&::after
-				position: absolute
-				content: ""
-				height: 4px
-				width: 96px
-				top: 50%
-				transform: translateY(-50%)
-				left: 47px
-				background-color: white
-		.big-text
-			font-family: 'Lato-Bold', Arial, Helvetica, sans-serif
-			font-size: 83px
-			margin-left: 400px
-			margin-bottom: 50px
-			max-width: 480px
-			line-height: 1.1
-		.mid-text
-			display: block
-			font-family: 'Lato-Medium', Arial, Helvetica, sans-serif
-			font-size: 42px
-			margin-left: 400px
-			margin-bottom: 87px
-			position: relative
-			&::after
-				content: ""
-				position: absolute
-				height: 2px
-				width: 320px
-				background-color: #fff
-				bottom: 7px
-				left: 364px
-		.lil-text
-			font-family: 'Lato-Light', Arial, Helvetica, sans-serif
-			font-size: 25px
-			line-height: 1.4
-			max-width: 840px
-			margin-left: 400px
-			margin-bottom: 43px
-			&:last-of-type
-				margin-bottom: 0
 		.rombs
 			position: absolute
 			top: 50%
 			transform: translateY(-50%)
-			left: 1500px
+			right: 500px
 			&__romb
 				height: 244px
 				width: 244px
@@ -136,4 +73,66 @@
 					color: $pseudoBlackTxt
 					font-family: 'Lato', Arial, Helvetica, sans-serif
 					font-size: 33px
-
+		.v-text
+			//display: inline-block
+			position: absolute
+			color: white
+			font-size: 42px
+			line-height: 86px
+			border: 1px solid white
+			padding-right: 30px
+			padding-left: 152px
+			transform: rotate(-90deg)
+			top: 133px
+			left: -190px
+			letter-spacing: 12px
+			&::before
+				position: absolute
+				content: ""
+				height: 26px
+				width: 26px
+				top: 50%
+				left: 21px
+				transform: translateY(-50%)
+				background-color: white
+				border-radius: 50%
+			&::after
+				position: absolute
+				content: ""
+				height: 4px
+				width: 96px
+				top: 50%
+				transform: translateY(-50%)
+				left: 47px
+				background-color: white
+		.big-text
+			font-family: 'Lato-Bold', Arial, Helvetica, sans-serif
+			font-size: 83px
+			margin-left: 200px
+			margin-bottom: 50px
+			max-width: 480px
+			line-height: 1.1
+		.mid-text
+			display: block
+			font-family: 'Lato-Medium', Arial, Helvetica, sans-serif
+			font-size: 42px
+			margin-left: 200px
+			margin-bottom: 87px
+			position: relative
+			&::after
+				content: ""
+				position: absolute
+				height: 2px
+				width: 320px
+				background-color: #fff
+				bottom: 7px
+				left: 364px
+		.lil-text
+			font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+			font-size: 25px
+			line-height: 1.4
+			max-width: 840px
+			margin-left: 200px
+			margin-bottom: 43px
+			&:last-of-type
+				margin-bottom: 0
