@@ -29,13 +29,13 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1900px) {
   .container {
     width: 1536px;
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 1960px) {
   .container {
     width: 1960px;
   }
