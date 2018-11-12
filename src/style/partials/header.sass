@@ -5,28 +5,40 @@
 	background-size: cover
 	background-color: $pseudoBlackBG
 	background-position: 50% 207px
+	+r(1980)
+		background-position: 50% 133px
+		font-size: 25px	
 	.logo
 		display: inline-block
 		vertical-align: middle
 		line-height: 0
 		//margin-bottom: 15px
 		+sprite($logo)
+		+r(1980)
+			display: none
 	.nav
 		display: flex
 		align-items: center
 		padding: 0 66px 0 121px
 		margin-bottom: 365px
+		+r(1980)
+			padding: 0 175px
+			margin-bottom: 236px
 		.menu
 			//vertical-align: middle
 			display: inline-block
 			margin-right: 119px
 			margin-left: auto
 			//padding-left: 183px
+			+r(1980)
+				margin-right: 77px
 			&__item
 				display: inline-block
 				margin-right: 26px 
 				position: relative
 				transition: background-color 2s
+				+r(1980)
+					margin-right: 5px
 				&:hover
 					background-color: $pseudoGreykBG
 					&::before
@@ -48,13 +60,15 @@
 					color: white
 					display: inline-block
 					padding: 0 11px 0 17px
-					line-height: 208px
+					line-height: 133px
 		.login
 			//vertical-align: middle
 			display: inline-block
 			text-align: center
 			text-decoration: none
 			margin-right: 68px
+			+r(1980)
+				margin-right: 45px
 			&__icon
 				display: inline-block
 				margin-bottom: 9px
@@ -85,6 +99,10 @@
 			margin-right: 100px
 			&:last-of-type
 				margin-right: 0
+			.phone-img
+				+r(1980)
+					height: 580px
+					width: auto
 			.big-text
 				display: inline-block
 				font-family: 'Lato-Black', Arial, Helvetica, sans-serif
@@ -93,6 +111,9 @@
 				text-shadow: 2px 8px black
 				//margin-left: 265px
 				margin-bottom: 50px
+				+r(1980)
+					font-size: 53px
+					margin-bottom: 33px
 				.decor-bar
 					background-color: #fff
 					width: 338px
@@ -102,6 +123,10 @@
 					margin-left: auto
 					margin-top: 27px
 					position: relative
+					+r(1980)
+						margin-top: 17px
+						height: 6px
+						width: 217px
 					&::before
 						content: ""
 						position: absolute
@@ -110,6 +135,10 @@
 						width: 12px
 						height: 10px
 						left: -78px
+						+r(1980)
+							height: 6px
+							width: 8px
+							left: -43px
 					&::after
 						content: ""
 						position: absolute
@@ -117,18 +146,29 @@
 						border-radius: 5px
 						width: 24px
 						height: 10px
-						left: -38px				
+						left: -38px	
+						+r(1980)
+							height: 6px
+							width: 12px	
+							left: -25px		
 			.mid-text
 				display: block
 				font-family: 'Lato', Arial, Helvetica, sans-serif
 				font-size: 50px
 				padding-left: 103px
 				margin-bottom: 255px
+				+r(1980)
+					font-size: 33px
+					padding-left: 70px
+					margin-bottom: 163px
 			.event-bar
 				font-family: 'Lato-Semibold', Arial, Helvetica, sans-serif
 				font-size: 33px
 				line-height: 0
 				padding-left: 233px
+				+r(1980)
+					font-size: 20px
+					padding-left: 150px
 				.create
 					display: inline-block
 					color: white
@@ -137,6 +177,10 @@
 					padding: 0 30px
 					border: 2px solid #fff
 					margin-right: 68px
+					+r(1980)
+						line-height: 49px
+						padding: 0 17px
+						margin-right: 44px
 				.event-form
 					display: inline-block
 					.sub
@@ -150,6 +194,11 @@
 						background-color: rgba(0, 0, 0, 0)
 						&:hover
 							cursor: pointer
+						+r(1980)
+							line-height: 49px
+							font-size: 20px
+							padding-left: 5px
+							padding-right: 12px
 					.inp
 						vertical-align: top
 						display: inline-block
@@ -164,6 +213,14 @@
 						&::placeholder
 							color: $pseudoBlueTxt2
 							opacity: 1
+						+r(1980)
+							line-height: 49px
+							font-size: 17px
+							padding-left: 21px
+							padding-right: 19px
+							//min-width: 115px
+							//display: inline-block
+							width: 120px
 			.phone-pic
 
 
