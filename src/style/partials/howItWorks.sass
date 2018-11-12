@@ -4,6 +4,9 @@
     font-size: 36px
     padding: 155px 0 185px 0 
     text-align: center
+    +r(1980)
+        padding: 45px 0 30px 0
+        font-size: 23px
     .big-text
         display: inline-block
         text-align: center
@@ -11,6 +14,9 @@
         font-size: 83px
         margin-bottom: 155px
         position: relative
+        +r(1980)
+            font-size: 63px
+            margin-bottom: 70px
         &::before
             content: ""
             position: absolute
@@ -20,6 +26,10 @@
             left: 7px
             background-color: $pseudoBlueBG
             border-radius: 4px
+            +r(1980)
+                bottom: -16px
+                height: 4px
+                width: 65px
         &::after
             content: ""
             position: absolute
@@ -28,7 +38,12 @@
             bottom: -25px
             left: 128px
             background-color: $pseudoBlueBG
-            border-radius: 4px        
+            border-radius: 4px      
+            +r(1980)
+                bottom: -16px
+                height: 4px
+                width: 10px
+                left: 78px
     .cols
         display: flex
         //justify-content: space-between
@@ -37,12 +52,19 @@
         //padding: 0 200px
         &__item
             min-width: 390px
+            +r(1980)
+                min-width: 250px
             .picture
                 margin-left: auto
                 margin-right: auto
                 display: block
                 border: 1px solid $pseudoBlueBG
                 margin-bottom: 74px
+                +r(1980)
+                    margin-bottom: 47px
+                    height: 104px
+                    width: 104px
+                    //transform: scale(0.65, 0.65)
                 &--mobile
                     +sprite($phone)
                     background-color: $pseudoBlueBG
