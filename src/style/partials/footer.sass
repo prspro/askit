@@ -3,6 +3,8 @@
 	background-color: black
 	color: white
 	text-align: center
+	+r(1980)
+		padding: 164px 0 63px 0
 	.logo
 		display: inline-block
 		vertical-align: middle
@@ -10,20 +12,31 @@
 		//margin-bottom: 15px
 		+sprite($logo)
 		margin-bottom: 76px
+		+r(1980)
+			margin-bottom: 90px
+			height: 260px
 	.cols
 		display: flex
 		justify-content: space-between
 		//align-items: center
 		margin-bottom: 183px
+		+r(1980)
+			padding: 0 120px
+			flex-wrap: wrap
+			margin-bottom: 350px
 		&__item
 			text-align: left
 			padding-top: 121px
 			margin-bottom: auto
+			+r(1980)
+				padding-top: 0
 			.text
 			.col-title
 				font-family: 'Lato', Arial, Helvetica, sans-serif
 				font-size: 28px
 				margin-bottom: 45px
+				+r(1980)
+					font-size: 59px
 			.social-bar
 				display: flex
 				justify-content: space-between
@@ -31,8 +44,14 @@
 				max-width: 302px
 				margin-left: auto
 				margin-right: auto
+				+r(1980)
+					max-width: 893px
+					margin-bottom: 160px
 				.icon
 					display: inline-block
+					+r(1980)
+						height: 93px
+						width: 93px
 					&--twitter
 						+sprite($twitt)
 					&--pinterest
@@ -51,12 +70,26 @@
 						color: #fff
 						line-height: 28px
 						transition: background-color 1s
+						+r(1980)
+							font-size: 47px
+							line-height: 52px
 						&:hover
 							background-color: $pseudoGreykBG
 			.subscribe
 				position: relative
 				padding: 0 6px
+				+r(1980)
+					margin: 0 195px
+					&::after
+						content: ""
+						position: absolute
+						height: 2px
+						background-color: #fff
+						left: 0
+						right: 0
+						bottom: 0
 				&__txt
+					//position: relative
 					display: inline-block
 					color: #ede3d3
 					border: none
@@ -64,11 +97,14 @@
 					font-size: 22px
 					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 					background-color: rgba(0, 0, 0, 0)
-					padding: 0
 					width: 100%
 					padding: 0 32px
 					box-sizing: border-box
 					text-align: center
+					+r(1980)
+						font-size: 64px
+						line-height: 120px
+						padding: 0 93px
 					&:focus
 						border: none
 						outline: none
@@ -83,35 +119,50 @@
 					top: 50%
 					transform: translateY(-50%)
 					right: 6px 
+					+r(1980)
+						height: 70px
+						width: 93px
+						border: 1px solid red
 					&:hover
 						cursor: pointer
 			&--logo-col
 				text-align: center
 				padding-top: 0
+				+r(1980)
+					flex-basis: 100%
+					margin-bottom: 185px
 				.text
 					max-width: 450px
 					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 					font-size: 25px
 					line-height: 1.3
+					+r(1980)
+						margin-left: auto
+						margin-right: auto
+						font-size: 64px
+						max-width: none
 			&--soc-col
 				text-align: center
 				min-width: 375px
-				position: relative
+				+r(1980)
+					flex-basis: 100%
+					padding-top: 100px
+				.col-title
+					+r(1980)
+						font-size: 80px
+						margin-bottom: 133px
 				.text
 					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 					font-size: 22px
 					line-height: 0.9
 					display: inline-block
 					margin-bottom: 45px
-				&::after
-					content: ""
-					position: absolute
-					height: 2px
-					background-color: #fff
-					left: 0
-					right: 0
-					bottom: 0
+					+r(1980)
+						font-size: 64px
+						margin-bottom: 105px
 	.title
 		font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 		font-size: 28px
 		line-height: 0.8
+		+r(1980)
+			font-size: 57px
