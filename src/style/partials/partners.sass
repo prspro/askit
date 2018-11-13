@@ -4,6 +4,8 @@
 	background-size: cover
 	background-position: 50% 0
 	text-align: center
+	+r(1980)
+		padding: 119px 0 138px 0
 	.big-text
 		display: inline-block
 		margin-bottom: 153px
@@ -13,6 +15,9 @@
 		font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 		letter-spacing: 10px
 		position: relative
+		+r(1980)
+			font-size: 69px
+			margin-bottom: 268px
 		&::after
 			content: ""
 			position: absolute
@@ -22,6 +27,10 @@
 			right: 15px
 			bottom: -24px
 			border-radius: 3px
+			+r(1980)
+				height: 5px
+				width: 86px
+				bottom: -21px
 		&::before
 			content: ""
 			position: absolute
@@ -31,12 +40,26 @@
 			right: 137px
 			bottom: -24px
 			border-radius: 3px
+			+r(1980)
+				bottom: -21px
+				height: 5px
+				right: 119px
+				width: 13px 
 	.cols
 		display: flex
 		justify-content: space-between
 		align-items: center
+		+r(1980)
+			flex-wrap: wrap
+			padding: 0 360px
 		&__item
 			display: inline-block
+			&:last-of-type
+				+r(1980)
+					margin-bottom: 0
+			+r(1980)
+				flex-basis: 30%
+				margin-bottom: 100px
 			&--mccann
 				+sprite($mccann)	
 			&--un-women
@@ -50,13 +73,19 @@
 			&--zappos
 				+sprite($zappos)
 			&--siemens
-				+sprite($siemens)							
+				//flex-grow: 3
+				flex-basis: 100%
+				+sprite($siemens)	
+				margin-left: auto
+				margin-right: auto						
 	.arrow
 		display: inline-block
 		position: relative
 		width: 160px
 		height: auto
 		//border: 1px solid red
+		+r(1980)
+			display: none
 		&--left
 			&::after
 				display: inline-block
