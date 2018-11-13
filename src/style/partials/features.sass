@@ -2,6 +2,8 @@
 	padding: 127px 0 146px 0 
 	color: $pseudoBlueTxt2
 	text-align: center
+	+r(1980)
+		padding: 149px 0 157px 0
 	.big-text
 		display: inline-block
 		//text-align: center
@@ -11,6 +13,10 @@
 		letter-spacing: 15px
 		position: relative
 		margin-bottom: 120px
+		+r(1980)
+			font-size: 57px
+			margin-bottom: 97px
+			letter-spacing: 5px
 		&::before
 			position: absolute
 			content: ""
@@ -20,6 +26,10 @@
 			border-radius: 3px
 			bottom: -23px
 			left: 5px
+			+r(1980)
+				height: 4px
+				bottom: -16px
+				width: 70px
 		&::after
 			position: absolute
 			content: ""
@@ -29,33 +39,25 @@
 			border-radius: 3px
 			bottom: -23px
 			left: 123px
+			+r(1980)
+				bottom: -16px
+				left: 81px
+				width: 11px
+				height: 4px
 	.cols
 		display: flex
 		justify-content: center
 		flex-wrap: wrap
-		padding: 0 150px
-		&__item
-			width: 518px
-			position: relative
-			&::after
-				content: ""
-				position: absolute
-				height: 164px
-				width: 2px
-				background-color: $pseudoBlueBG
-				top: 0
-				right: 0
-	
-			&:last-of-type
-				&::after
-					display: none
-				&::before
-					display: none	
+		//padding: 0 150px
 		.feature-box
 			//display: block
 			display: inline-block
 			position: relative
 			min-width: 518px
+			padding: 20px 0 43px 0
+			+r(1980)
+				min-width: 720px
+				padding: 27px 0 75px 0
 			&::after
 				content: ""
 				position: absolute
@@ -66,6 +68,9 @@
 				left: 46px
 				right: 46px
 				//transform: translateX(-50%)
+				+r(1980)
+					left: 80px
+					right: 80px
 			&::before
 				content: ""
 				position: absolute
@@ -74,7 +79,9 @@
 				background-color: $pseudoBlueBG
 				bottom: 55px
 				top: 0
-				right: 0		
+				right: 0	
+				+r(1980)
+					bottom: 74px
 			&:nth-of-type(n+4)
 				&::after
 					display: none
@@ -84,14 +91,27 @@
 			&:nth-of-type(3)
 				&::before
 					display: none
+					+r(1980)
+						display: initial
+						bottom: 74px
+						top: 74px
 			&:nth-of-type(6)
 				&::before
-					display: none			
-			//margin-bottom: 27px
-			padding: 20px 0 43px 0
+					display: none								
+			&:nth-of-type(even)
+				&::before
+					+r(1980)
+						display: none	
+			&:nth-of-type(4)
+				&::after
+					+r(1980)
+						display: initial		
 			.pic
 				display: inline-block
 				margin-bottom: 27px
+				+r(1980)
+					margin-bottom: 44px
+					height: 129px
 				&--microphone
 					+sprite($microphone)
 				&--medal
@@ -108,4 +128,7 @@
 				display: block
 				font-family: 'Lato-Bold', Arial, Helvetica, sans-serif
 				font-size: 42px
-				color: $pseudoBlueTxt2             
+				color: $pseudoBlueTxt2   
+				+r(1980)
+					font-size: 62px
+					line-height: 0.8          
