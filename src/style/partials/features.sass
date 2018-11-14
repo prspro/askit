@@ -4,6 +4,8 @@
 	text-align: center
 	+r(1980)
 		padding: 149px 0 157px 0
+	+r(1199)	
+		padding: 40px 0 90px 0
 	.big-text
 		display: inline-block
 		//text-align: center
@@ -17,6 +19,9 @@
 			font-size: 57px
 			margin-bottom: 97px
 			letter-spacing: 5px
+		+r(1199)
+			font-size: 45px
+			margin-bottom: 65px
 		&::before
 			position: absolute
 			content: ""
@@ -30,6 +35,10 @@
 				height: 4px
 				bottom: -16px
 				width: 70px
+			+r(1199)
+				bottom: -15px
+				height: 3px
+				width: 55px
 		&::after
 			position: absolute
 			content: ""
@@ -44,11 +53,18 @@
 				left: 81px
 				width: 11px
 				height: 4px
+			+r(1199)
+				left: 68px
+				height: 3px
+				bottom: -15px
+				width: 9px
 	.cols
 		display: flex
 		justify-content: center
 		flex-wrap: wrap
 		//padding: 0 150px
+		+r(1199)
+			padding: 0 70px
 		.feature-box
 			//display: block
 			display: inline-block
@@ -60,6 +76,11 @@
 				padding: 27px 0 75px 0
 			+r(1599)
 				min-width: 400px
+			+r(1199)
+				min-width: auto
+				padding: 10px 0 25px 0
+				max-width: 284px
+				flex-basis: 50%
 			&::after
 				content: ""
 				position: absolute
@@ -73,6 +94,9 @@
 				+r(1980)
 					left: 80px
 					right: 80px
+				+r(1199)
+					left: 27px
+					right: 27px
 			&::before
 				content: ""
 				position: absolute
@@ -84,12 +108,16 @@
 				right: 0	
 				+r(1980)
 					bottom: 74px
+				+r(1199)
+					bottom: 27px
 			&:nth-of-type(n+4)
 				&::after
 					display: none
 				&::before
 					top: 55px
 					bottom: 0
+					+r(1199)
+						top: 27px
 			&:nth-of-type(3)
 				&::before
 					display: none
@@ -97,6 +125,9 @@
 						display: initial
 						bottom: 74px
 						top: 74px
+					+r(1199)
+						top: 27px
+						bottom: 27px
 			&:nth-of-type(6)
 				&::before
 					display: none								
@@ -114,6 +145,9 @@
 				+r(1980)
 					margin-bottom: 44px
 					height: 129px
+				+r(1199)
+					height: 47px
+					margin-bottom: 15px
 				&--microphone
 					+sprite($microphone)
 				&--medal
@@ -135,4 +169,6 @@
 					font-size: 62px
 					line-height: 0.8
 				+r(1599)
-					font-size: 40px          
+					font-size: 40px
+				+r(1199)
+					font-size: 22px          

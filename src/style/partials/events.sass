@@ -2,13 +2,14 @@
 	padding: 91px 0 87px 0
 	text-align: center
 	background-color: $pseudoWhiteBG
+	text-align: center
 	//width: 2400px
-	//margin-left: auto
-	//margin-right: auto
 	+r(1980)
 		padding: 161px 0 374px 0
 	+r(1599)
 		padding: 60px 0 100px 0
+	+r(1199)
+		padding: 0
 	.big-text
 		display: inline-block
 		color: $pseudoBlueTxt2
@@ -24,6 +25,8 @@
 			margin-bottom: 221px
 		+r(1599)
 			margin-bottom: 122px
+		+r(1199)
+			display: none
 		&::before
 			content: ""
 			position: absolute
@@ -54,10 +57,20 @@
 	.event-bar
 		display: flex
 		justify-content: space-between
-		padding: 0 127px
+		//padding: 0 127px
 		position: relative
+		max-width: 1700px
+		margin-right: auto
+		margin-left: auto
 		+r(1980)
-			padding: 0
+			max-width: 1536px
+		+r(1599)
+			max-width: 1140px
+		+r(1199)
+			max-width: none
+			width: 100%
+			flex-direction: column
+			position: static
 		.event
 			width: 575px
 			padding-top: 60px
@@ -72,18 +85,26 @@
 				background-size: contain
 			+r(1599)
 				width: 370px
+			+r(1199)
+				width: 100%
+				box-shadow: none
+				//position: static
+				background-size: cover
 			&::after
 				content: ""
 				position: absolute
 				left: 0
 				right: 0
-				top: 232px
+				top: 292px
 				//background-color: $pseudoGreenBG
 				height: 5px
 				+r(1980)
-					height: 4px	
+					height: 4px
+					top: 232px	
 				+r(1599)
 					top: 190px
+				+r(1199)
+					display: none
 			.big-text2
 				font-size: 89px
 				color: white
@@ -174,8 +195,12 @@
 					padding: 61px 0 49px 0
 				+r(1599)
 					width: 420px
+				+r(1199)
+					position: relative
+					//Whyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy?????????
+					transform: translate(-50%, 0)
 				&::after
-					top: 330px
+					top: 333px
 					background-color: $pseudoOrangeBG
 					+r(1980)
 						top: 265px

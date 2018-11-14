@@ -8,6 +8,8 @@
 	+r(1980)
 		background-position: 50% 133px
 		font-size: 25px	
+	+r(1199)
+		background-position: 50% 195px
 	.logo
 		display: inline-block
 		vertical-align: middle
@@ -16,6 +18,9 @@
 		+sprite($logo)
 		+r(1980)
 			display: none
+		+r(1199)
+			display: inline-block
+			height: 128px
 	.nav
 		display: flex
 		align-items: center
@@ -27,6 +32,10 @@
 		+r(1599)
 			padding: 0
 			margin-bottom: 150px
+		+r(1199)
+			min-height: 195px
+			justify-content: center
+			margin-bottom: 155px
 		.menu
 			//vertical-align: middle
 			display: inline-block
@@ -35,6 +44,8 @@
 			//padding-left: 183px
 			+r(1980)
 				margin-right: 77px
+			+r(1199)
+				display: none
 			&__item
 				display: inline-block
 				margin-right: 26px 
@@ -75,6 +86,8 @@
 			margin-right: 68px
 			+r(1980)
 				margin-right: 45px
+			+r(1199)
+				display: none
 			&__icon
 				display: inline-block
 				margin-bottom: 9px
@@ -91,6 +104,8 @@
 			text-decoration: none
 			+r(1600)
 				margin-right: auto
+			+r(1199)
+				display: none
 			&__icon
 				display: inline-block
 				margin-bottom: 9px
@@ -105,8 +120,14 @@
 		justify-content: center
 		&__item
 			margin-right: 100px
+			+r(1199)
+				margin-right: 0
+				text-align: center
+				padding-bottom: 70px
 			&:last-of-type
 				margin-right: 0
+				+r(1199)
+					display: none
 			.phone-img
 				+r(1980)
 					height: 580px
@@ -126,6 +147,9 @@
 					margin-bottom: 33px
 				+r(1600)
 					font-size: 43px
+				+r(1199)
+					font-size: 44px
+					margin-bottom: 45px
 				.decor-bar
 					background-color: #fff
 					width: 338px
@@ -176,6 +200,10 @@
 				+r(1600)
 					font-size: 25px
 					margin-bottom: 100px
+				+r(1199)
+					font-size: 26px
+					padding-left: 55px
+					margin-bottom: 67px
 			.event-bar
 				font-family: 'Lato-Semibold', Arial, Helvetica, sans-serif
 				font-size: 33px
@@ -184,6 +212,8 @@
 				+r(1980)
 					font-size: 20px
 					padding-left: 150px
+				+r(1199)
+					padding: 0
 				.create
 					display: inline-block
 					color: white
@@ -196,6 +226,10 @@
 						line-height: 49px
 						padding: 0 17px
 						margin-right: 44px
+					+r(1199)
+						line-height: 60px
+						font-size: 26px
+						padding: 0 20px
 				.event-form
 					display: inline-block
 					.sub
@@ -214,6 +248,10 @@
 							font-size: 20px
 							padding-left: 5px
 							padding-right: 12px
+						+r(1199)
+							font-size: 26px
+							line-height: 60px
+							padding: 0 17px 0 7px
 					.inp
 						vertical-align: top
 						display: inline-block
@@ -236,6 +274,11 @@
 							//min-width: 115px
 							//display: inline-block
 							width: 120px
+						+r(1199)
+							line-height: 60px
+							font-size: 22px
+							padding: 0 25px
+							width: 150px
 			.phone-pic
 
 

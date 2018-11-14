@@ -6,6 +6,8 @@
 	text-align: center
 	+r(1980)
 		padding: 119px 0 138px 0
+	+r(1199)
+		padding: 50px 0 68px 0
 	.big-text
 		display: inline-block
 		margin-bottom: 153px
@@ -20,6 +22,10 @@
 			margin-bottom: 268px
 		+r(1599)
 			margin-bottom: 150px
+		+r(1199)
+			font-size: 48px
+			margin-bottom: 125px
+			letter-spacing: 5px
 		&::after
 			content: ""
 			position: absolute
@@ -33,6 +39,11 @@
 				height: 5px
 				width: 86px
 				bottom: -21px
+			+r(1199)
+				right: 11px
+				bottom: -17px
+				height: 3px
+				width: 59px 
 		&::before
 			content: ""
 			position: absolute
@@ -47,6 +58,11 @@
 				height: 5px
 				right: 119px
 				width: 13px 
+			+r(1199)
+				right: 85px
+				width: 9px
+				bottom: -17px
+				height: 3px
 	.cols
 		display: flex
 		justify-content: space-between
@@ -56,6 +72,8 @@
 			padding: 0 360px
 		+r(1599)
 			padding: 0 150px
+		+r(1199)
+			padding: 0 168px
 		&__item
 			display: inline-block
 			&:last-of-type

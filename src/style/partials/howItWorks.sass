@@ -7,6 +7,9 @@
     +r(1980)
         padding: 45px 0 30px 0
         font-size: 23px
+    +r(1199)
+        padding: 60px 0 90px 0
+        font-size: 22px
     .big-text
         display: inline-block
         text-align: center
@@ -17,6 +20,9 @@
         +r(1980)
             font-size: 63px
             margin-bottom: 70px
+        +r(1199)
+            font-size: 47px
+            margin-bottom: 75px
         &::before
             content: ""
             position: absolute
@@ -30,6 +36,11 @@
                 bottom: -16px
                 height: 4px
                 width: 65px
+            +r(1199)
+                bottom: -14px
+                height: 3px
+                width: 59px
+                left: 4px
         &::after
             content: ""
             position: absolute
@@ -44,16 +55,31 @@
                 height: 4px
                 width: 10px
                 left: 78px
+            +r(1199)
+                left: 66px
+                height: 3px
+                bottom: -14px
+                width: 8px
     .cols
         display: flex
         //justify-content: space-between
         justify-content: space-around
         line-height: 1.2
         //padding: 0 200px
+        +r(1199)
+            flex-wrap: wrap
+            padding: 0 115px
         &__item
             min-width: 390px
             +r(1980)
                 min-width: 250px
+            +r(1199)
+                flex-basis: 50%
+                min-width: none
+            &:nth-of-type(1)
+                margin-bottom: 55px
+            &:nth-of-type(2)
+                margin-bottom: 55px            
             .picture
                 margin-left: auto
                 margin-right: auto
@@ -65,6 +91,10 @@
                     height: 104px
                     width: 104px
                     //transform: scale(0.65, 0.65)
+                +r(1199)
+                    height: 96px
+                    width: 96px
+                    margin-bottom: 45px
                 &--mobile
                     +sprite($phone)
                     background-color: $pseudoBlueBG
