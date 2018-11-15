@@ -90,6 +90,8 @@
 				box-shadow: none
 				//position: static
 				background-size: cover
+			+r(1199)
+				padding: 45px 0 35px 0
 			&::after
 				content: ""
 				position: absolute
@@ -105,56 +107,90 @@
 					top: 190px
 				+r(1199)
 					display: none
-			.big-text2
-				font-size: 89px
-				color: white
-				text-transform: uppercase
-				line-height: 0.8
+			.title-part
+				margin-bottom: 90px
 				+r(1980)
-					font-size: 71px
-				+r(1599)
-					font-size: 50px
-				&--thin
-					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
-					margin-bottom: 40px
-					+r(1980)
-						margin-bottom: 33px
-				&--thick
-					font-family: 'Lato-Bold', Arial, Helvetica, sans-serif
+					margin-bottom: 70px
+				+r(1199)
 					margin-bottom: 90px
+				.big-text2
+					font-size: 89px
+					color: white
+					text-transform: uppercase
+					line-height: 0.8
 					+r(1980)
-						margin-bottom: 70px
-			.pic
-				display: inline-block
-				margin-bottom: 15px
-				+r(1980)
-					height: 69px
-					margin-bottom: 13px
-				&--external
-					+sprite($usb-connection)
-				&--interactive
-					margin-bottom: 17px
-					+sprite($interactivity)
-					+r(1980)
-						height: 90px
-						margin-bottom: 15px
-				&--internal
-					+sprite($hard-disk)
-			.lil-text
-				color: black
-				font-family: 'Lato-Light', Arial, Helvetica, sans-serif
-				font-size: 22px
-				line-height: 1.7
-				max-width: 395px
-				margin-left: auto
-				margin-right: auto
+						font-size: 71px
+					+r(1599)
+						font-size: 50px
+					+r(1199)
+						display: inline-block
+					&--thin
+						font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+						margin-bottom: 40px
+						+r(1980)
+							margin-bottom: 33px
+						+r(1199)
+							margin-bottom: 0
+						+r(1199)
+							font-size: 60px
+							margin-right: 20px
+					&--thick
+						font-family: 'Lato-Bold', Arial, Helvetica, sans-serif
+						+r(1199)
+							font-size: 67px
+			.content-part
 				margin-bottom: 17px
 				+r(1980)
-					font-size: 18px
-					max-width: 325px
 					margin-bottom: 12px
-				+r(1599)
-					max-width: 300px
+				+r(1199)
+					margin-bottom: 50px
+				.pic
+					display: inline-block
+					margin-bottom: 15px
+					+r(1980)
+						height: 69px
+						margin-bottom: 13px
+					+r(1199)
+						margin-bottom: 0
+						//how to vertical align????????????
+						//vertical-align: middle
+						//line-height: 1.7
+						margin-right: 30px
+					&--external
+						+sprite($usb-connection)
+						+r(1199)
+							+sprite($usb-connection-w)	
+					&--interactive
+						margin-bottom: 17px
+						+sprite($interactivity)
+						+r(1980)
+							height: 90px
+							margin-bottom: 15px
+						+r(1199)
+							+sprite($interactivity-w)	
+					&--internal
+						+sprite($hard-disk)
+						+r(1199)
+							+sprite($hard-disk-w)	
+				.lil-text
+					color: black
+					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
+					font-size: 22px
+					line-height: 1.7
+					max-width: 395px
+					margin-left: auto
+					margin-right: auto
+					+r(1980)
+						font-size: 18px
+						max-width: 325px
+						//margin-bottom: 12px
+					+r(1599)
+						max-width: 300px
+					+r(1199)
+						display: inline-block
+						max-width: 530px
+						color: white
+						font-size: 29px
 			.btn
 				display: inline-block
 				color: white
@@ -206,22 +242,31 @@
 						top: 265px
 					+r(1599)
 						top: 217px
-				.big-text2
-					&--thin
-						margin-bottom: 46px
-						+r(1980)
-							margin-bottom: 38px
-				.big-text2
-					&--thick
-						margin-bottom: 85px
-						+r(1980)
-							margin-bottom: 69px
-				.lil-text
+				.title-part
+					margin-bottom: 85px
+					+r(1980)
+						margin-bottom: 69px
+					.big-text2
+						&--thin
+							margin-bottom: 46px
+							+r(1980)
+								margin-bottom: 38px
+							+r(1199)
+								margin-bottom: 0
+								//font-size: 60px
+					.big-text2
+						&--thick
+							//margin-bottom: 85px
+							+r(1199)
+								//font-size: 67px
+				.content-part
 					margin-bottom: 28px
 					+r(1980)
-						font-size: 19px
 						margin-bottom: 23px
-					+r(1599)
+					.lil-text
+						+r(1980)
+							font-size: 19px
+						+r(1599)
 				.btn
 					font-size: 38px
 					line-height: 64px
