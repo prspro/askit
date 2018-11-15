@@ -36,6 +36,8 @@
 			min-height: 195px
 			justify-content: center
 			margin-bottom: 155px
+		+r(767)
+			margin-bottom: 50px
 		.menu
 			//vertical-align: middle
 			display: inline-block
@@ -150,6 +152,8 @@
 				+r(1199)
 					font-size: 44px
 					margin-bottom: 45px
+				+r(767)
+					font-size: 33px
 				.decor-bar
 					background-color: #fff
 					width: 338px
@@ -163,6 +167,8 @@
 						margin-top: 17px
 						height: 6px
 						width: 217px
+					+r(767)
+						display: none
 					&::before
 						content: ""
 						position: absolute
@@ -204,6 +210,9 @@
 					font-size: 26px
 					padding-left: 55px
 					margin-bottom: 67px
+				+r(767)
+					font-size: 22px
+					padding-left: 0
 			.event-bar
 				font-family: 'Lato-Semibold', Arial, Helvetica, sans-serif
 				font-size: 33px
@@ -230,6 +239,11 @@
 						line-height: 60px
 						font-size: 26px
 						padding: 0 20px
+					+r(767)
+						margin-right: 0
+						margin-bottom: 25px
+						font-size: 22px
+						line-height: 45px
 				.event-form
 					display: inline-block
 					.sub
@@ -252,6 +266,9 @@
 							font-size: 26px
 							line-height: 60px
 							padding: 0 17px 0 7px
+						+r(767)
+							font-size: 22px
+							line-height: 45px
 					.inp
 						vertical-align: top
 						display: inline-block
@@ -263,6 +280,7 @@
 						border: 2px solid #fff
 						max-width: 185px
 						box-sizing: border-box
+						text-align: center
 						&::placeholder
 							color: $pseudoBlueTxt2
 							opacity: 1
@@ -279,6 +297,11 @@
 							font-size: 22px
 							padding: 0 25px
 							width: 150px
+						+r(767)
+							font-size: 22px
+							line-height: 45px
+							width: 127.33px
+							padding: 0 10px
 			.phone-pic
 
 

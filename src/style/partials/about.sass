@@ -184,6 +184,10 @@
 						min-width: 300px
 					+r(1199)
 						min-width: 170px
+					+r(767)
+						margin-right: 0
+						margin-bottom: 35px
+						display: block
 					&::after
 						content: ""
 						position: absolute
@@ -287,8 +291,10 @@
 						+r(1199)
 							font-size: 24px
 							margin-bottom: 40px
+							display: inline-block
 					&:last-of-type
 						margin-right: 0
+						margin-bottom: 0
 					&--audience
 						&::after
 							background-color: $pseudoGreenBG

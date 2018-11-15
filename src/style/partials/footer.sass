@@ -69,6 +69,11 @@
 					margin-bottom: 80px
 				+r(1199)
 					max-width: 442px
+				+r(767)
+					//max-width: 200px
+					//margin: 0
+					//margin-left: 0
+					//margin-right: 0
 				.icon
 					display: inline-block
 					+r(1980)
@@ -103,20 +108,23 @@
 						&:hover
 							background-color: $pseudoGreykBG
 			.subscribe
+				//display: none
 				position: relative
 				padding: 0 6px
 				+r(1980)
 					margin: 0 195px
 				+r(1199)
 					margin: 0 87px
-					&::after
-						content: ""
-						position: absolute
-						height: 2px
-						background-color: #fff
-						left: 0
-						right: 0
-						bottom: 0
+				+r(767)
+					margin: 0
+				&::after
+					content: ""
+					position: absolute
+					height: 2px
+					background-color: #fff
+					left: 0
+					right: 0
+					bottom: 0
 				&__txt
 					//position: relative
 					display: inline-block
@@ -137,6 +145,10 @@
 					+r(1199)
 						font-size: 31px
 						line-height: 60px
+						padding: 0 45px
+					+r(767)
+						font-size: 23px
+						padding: 0 32px
 					&:focus
 						border: none
 						outline: none
@@ -158,6 +170,9 @@
 					+r(1199)
 						height: 34px
 						width: 45px
+					+r(767)
+						width: 32px
+						height: 24px
 					&:hover
 						cursor: pointer
 			&--logo-col
@@ -171,6 +186,8 @@
 				+r(1199)
 					margin-bottom: 150px
 					display: initial
+				+r(767)
+					margin-bottom: 60px
 				.text
 					max-width: 450px
 					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
@@ -186,6 +203,8 @@
 					+r(1199)
 						font-size: 33px
 						max-width: 615px
+					+r(767)
+						font-size: 22px
 			&--soc-col
 				text-align: center
 				min-width: 375px
@@ -195,6 +214,8 @@
 				+r(1199)
 					display: initial
 					padding-top: 0
+				+r(375)
+					min-width: 0
 				.col-title
 					+r(1980)
 						font-size: 80px
@@ -205,6 +226,9 @@
 					+r(1199)
 						font-size: 38px
 						margin-bottom: 60px
+					+r(767)
+						font-size: 33px
+						//display: none
 				.text
 					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 					font-size: 22px
@@ -219,6 +243,8 @@
 						margin-bottom: 50px
 					+r(1199)
 						font-size: 31px
+					+r(767)
+						//display: none
 	.title
 		font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 		font-size: 28px
