@@ -7,6 +7,8 @@
 		padding: 164px 0 63px 0
 	+r(1599)
 		padding: 60px 0 30px 0
+	+r(1199)
+		padding: 79px 0 35px 0
 	.logo
 		display: inline-block
 		vertical-align: middle
@@ -19,6 +21,9 @@
 			height: 260px
 		+r(1599)
 			height: 169px
+		+r(1199)
+			height: 128px
+			margin-bottom: 35px
 	.cols
 		display: flex
 		justify-content: space-between
@@ -37,6 +42,8 @@
 			margin-bottom: auto
 			+r(1980)
 				padding-top: 0
+			+r(1199)
+				display: none
 			.text
 			.col-title
 				font-family: 'Lato', Arial, Helvetica, sans-serif
@@ -58,11 +65,16 @@
 					margin-bottom: 160px
 				+r(1599)
 					margin-bottom: 80px
+				+r(1199)
+					max-width: 442px
 				.icon
 					display: inline-block
 					+r(1980)
 						height: 93px
 						width: 93px
+					+r(1199)
+						height: 45px
+						width: 45px
 					&--twitter
 						+sprite($twitt)
 					&--pinterest
@@ -93,6 +105,8 @@
 				padding: 0 6px
 				+r(1980)
 					margin: 0 195px
+				+r(1199)
+					margin: 0 87px
 					&::after
 						content: ""
 						position: absolute
@@ -118,6 +132,9 @@
 						font-size: 64px
 						line-height: 120px
 						padding: 0 93px
+					+r(1199)
+						font-size: 31px
+						line-height: 60px
 					&:focus
 						border: none
 						outline: none
@@ -136,6 +153,9 @@
 						height: 70px
 						width: 93px
 						border: 1px solid red
+					+r(1199)
+						height: 34px
+						width: 45px
 					&:hover
 						cursor: pointer
 			&--logo-col
@@ -146,6 +166,9 @@
 					margin-bottom: 185px
 				+r(1599)
 					margin-bottom: 135px
+				+r(1199)
+					margin-bottom: 150px
+					display: initial
 				.text
 					max-width: 450px
 					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
@@ -158,18 +181,27 @@
 						max-width: none
 					+r(1599)
 						font-size: 43px
+					+r(1199)
+						font-size: 33px
+						max-width: 615px
 			&--soc-col
 				text-align: center
 				min-width: 375px
 				+r(1980)
 					flex-basis: 100%
 					padding-top: 100px
+				+r(1199)
+					display: initial
+					padding-top: 0
 				.col-title
 					+r(1980)
 						font-size: 80px
 						margin-bottom: 133px
 					+r(1599)
 						//font-size: 50px
+						margin-bottom: 60px
+					+r(1199)
+						font-size: 38px
 						margin-bottom: 60px
 				.text
 					font-family: 'Lato-Light', Arial, Helvetica, sans-serif
@@ -183,6 +215,8 @@
 					+r(1599)
 						font-size: 40px
 						margin-bottom: 50px
+					+r(1199)
+						font-size: 31px
 	.title
 		font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 		font-size: 28px
@@ -191,3 +225,5 @@
 			font-size: 57px
 		+r(1599)
 			font-size: 40px
+		+r(1199)
+			font-size: 28px
