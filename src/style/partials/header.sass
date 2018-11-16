@@ -21,6 +21,9 @@
 		+r(1199)
 			display: inline-block
 			height: 128px
+			//margin-left: auto
+		+r(767)
+			display: none
 	.nav
 		display: flex
 		align-items: center
@@ -36,8 +39,59 @@
 			min-height: 195px
 			justify-content: center
 			margin-bottom: 155px
+			position: relative
 		+r(767)
 			margin-bottom: 50px
+		.burger
+			display: none
+			height: 52px
+			width: 52px
+			border-radius: 50%
+			border: 2px solid white
+			position: absolute
+			+r(1199)
+				display: initial
+				//margin-left: auto
+				justify-self: right
+				right: 28px
+			+r(767)
+				position: static
+				width: 75px
+				height: 75px
+			.bar
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				width: 26px
+				height: 2px
+				background-color: #fff
+				margin-bottom: 9px
+				+r(767)
+					width: 42px
+					height: 3px
+				&:after
+					content: ""
+					position: absolute
+					top: 9px
+					left: 0
+					right: 0
+					height: 2px
+					background-color: #fff
+					+r(767)
+						top: 12px
+						height: 3px
+				&:before
+					content: ""
+					position: absolute
+					bottom: 9px
+					left: 0
+					right: 0
+					height: 2px
+					background-color: #fff
+					+r(767)
+						bottom: 12px
+						height: 3px
 		.menu
 			//vertical-align: middle
 			display: inline-block
