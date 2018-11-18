@@ -4,7 +4,7 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 7,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: $('.arrow.arrow--left'),
         nextArrow: $('.arrow.arrow--right'),
