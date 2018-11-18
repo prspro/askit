@@ -67,6 +67,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
+		display: none
 		+r(1980)
 			flex-wrap: wrap
 			padding: 0 360px
@@ -105,49 +106,85 @@
 				+sprite($siemens)	
 				margin-left: auto
 				margin-right: auto						
-	.arrow
-		display: inline-block
+	.labels
 		position: relative
-		width: 160px
-		height: auto
-		//border: 1px solid red
-		+r(1980)
-			display: none
-		&--left
-			&::after
+		.carousel
+			//align-items: center
+			//padding:  0 160px
+			.label
 				display: inline-block
-				content: ""
-				position: absolute
-				height: 2px
-				width: 40px
-				background-color: #fff
-				transform: rotate(-45deg)
-				bottom: 14px
-			&::before
-				display: inline-block
-				content: ""
-				position: absolute
-				height: 2px
-				width: 40px
-				background-color: #fff
-				transform: rotate(45deg)
-				bottom: -14px			
-		&--right
-			&::after
-				display: inline-block
-				content: ""
-				position: absolute
-				height: 2px
-				width: 40px
-				background-color: #fff
-				transform: rotate(45deg)
-				bottom: 14px
-			&::before
-				display: inline-block
-				content: ""
-				position: absolute
-				height: 2px
-				width: 40px
-				background-color: #fff
-				transform: rotate(-45deg)
-				bottom: -14px	
+				height: 100px
+				width: 200px
+				//background-color: red
+				//margin: 0 10
+				//background: url("../img/siemens.png") no-repeat center
+				//background-size: contain
+				height: 70px
+				&--mccann
+					background: url("../img/mccann.png") no-repeat center	
+				&--un-women
+					background: url("../img/un-women.png") no-repeat center
+				&--accenture
+					background: url("../img/accenture.png") no-repeat center
+				&--cisco
+					background: url("../img/cisco.png") no-repeat center
+				&--eventbrite
+					background: url("../img/eventbrite.png") no-repeat center
+				&--zappos
+					background: url("../img/zappos.png") no-repeat center
+				&--siemens
+					background: url("../img/siemens.png") no-repeat center			
+		.arrow
+			display: inline-block
+			position: absolute
+			width: 29px
+			height: 57px
+			//border: 1px solid red
+			&--left
+				left: -106px
+				top: 50%
+				transform: translateY(-50%)
+				&::after
+					display: inline-block
+					content: ""
+					position: absolute
+					height: 2px
+					width: 40px
+					background-color: #fff
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -14px) rotate(-45deg)
+				&::before
+					display: inline-block
+					content: ""
+					position: absolute
+					height: 2px
+					width: 40px
+					background-color: #fff
+					top: 50%
+					left: 50%
+					transform: translate(-50%, 14px) rotate(45deg)		
+			&--right
+				right: -106px
+				top: 50%
+				transform: translateY(-50%)
+				&::after
+					display: inline-block
+					content: ""
+					position: absolute
+					height: 2px
+					width: 40px
+					background-color: #fff
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -14px) rotate(45deg)
+				&::before
+					display: inline-block
+					content: ""
+					position: absolute
+					height: 2px
+					width: 40px
+					background-color: #fff
+					top: 50%
+					left: 50%
+					transform: translate(-50%, 14px) rotate(-45deg)	
