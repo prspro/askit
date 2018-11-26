@@ -146,6 +146,9 @@
 			.pic
 				display: inline-block
 				margin-bottom: 27px
+				height: 86px
+				width: 85px
+				//background-color: #000
 				+r(1980)
 					margin-bottom: 44px
 					height: 129px
@@ -153,17 +156,29 @@
 					height: 47px
 					margin-bottom: 15px
 				&--microphone
-					+sprite($microphone)
+					//+sprite($microphone)
+					background: url('../img/microphone.png') no-repeat center 
+					background-size: contain
 				&--medal
-					+sprite($medal)
+					//+sprite($medal)
+					background: url('../img/medal.png') no-repeat center 
+					background-size: contain
 				&--bars
-					+sprite($bar-chart)
+					//+sprite($bar-chart)
+					background: url('../img/bar-chart.png') no-repeat center 
+					background-size: contain
 				&--flag
-					+sprite($flag)
+					//+sprite($flag)
+					background: url('../img/flag.png') no-repeat center 
+					background-size: contain
 				&--graph
-					+sprite($insight)
+					//+sprite($insight)
+					background: url('../img/insight.png') no-repeat center 
+					background-size: contain
 				&--block
-					+sprite($padlock)   
+					//+sprite($padlock)  
+					background: url('../img/padlock.png') no-repeat center  
+					background-size: contain
 			.text
 				display: block
 				font-family: 'Lato-Bold', Arial, Helvetica, sans-serif
