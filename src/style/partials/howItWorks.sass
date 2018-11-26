@@ -89,9 +89,12 @@
             &:nth-of-type(2)
                 margin-bottom: 55px            
             .picture
-                margin-left: auto
-                margin-right: auto
-                display: block
+                //margin-left: auto
+                //margin-right: auto
+                //display: block
+                display: inline-block
+                height: 158px
+                width: 158px
                 border: 1px solid $pseudoBlueBG
                 margin-bottom: 74px
                 +r(1980)
@@ -104,12 +107,22 @@
                     width: 96px
                     margin-bottom: 45px
                 &--mobile
-                    +sprite($phone)
+                    //+sprite($phone)
+                    background: url('../img/phone.png') no-repeat center
                     background-color: $pseudoBlueBG
+                    background-size: cover
+                    //width: 158px
                 &--discuss
-                    +sprite($discuss)
+                    //+sprite($discuss)
+                    background: url('../img/discuss.png') no-repeat center
+                    background-size: cover
                 &--qr
-                    +sprite($qr)
+                    background: url('../img/qr.png') no-repeat center
+                    background-size: cover
+                    //+sprite($qr)
                 &--favorite
-                    +sprite($favorites)
+                    background: url('../img/favorites.png') no-repeat center
+                    background-size: cover
+                    //+sprite($favorites)
             .text
+                display: block
