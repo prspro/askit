@@ -14,11 +14,16 @@
 		vertical-align: middle
 		line-height: 0
 		//margin-bottom: 15px
-		+sprite($logo)
+		//+sprite($logo)
 		margin-bottom: 76px
+		width: 140px
+		height: 169px
+		background: url('../img/logo.png') no-repeat center
+		background-size: cover
 		+r(1980)
 			margin-bottom: 90px
 			height: 260px
+			width: 215.4px
 		+r(1599)
 			height: 169px
 		+r(1199)
@@ -76,6 +81,8 @@
 					//margin-right: 0
 				.icon
 					display: inline-block
+					height: 32px
+					width: 32px
 					+r(1980)
 						height: 93px
 						width: 93px
@@ -83,13 +90,21 @@
 						height: 45px
 						width: 45px
 					&--twitter
-						+sprite($twitt)
+						//+sprite($twitt)
+						background: url('../img/twitt.png') no-repeat center
+						background-size: cover
 					&--pinterest
-						+sprite($pin)
+						//+sprite($pin)
+						background: url('../img/pin.png') no-repeat center
+						background-size: cover
 					&--in
-						+sprite($in)
+						//+sprite($in)
+						background: url('../img/in.png') no-repeat center
+						background-size: cover
 					&--fb
-						+sprite($facebook)
+						//+sprite($facebook)
+						background: url('../img/facebook.png') no-repeat center
+						background-size: cover
 			.links
 				&__item
 					display: block
@@ -154,19 +169,23 @@
 						outline: none
 				&__btn
 					position: absolute
-					//display: inline-block
+					display: inline-block
 					border: none
 					background-color: rgba(0, 0, 0, 0)
 					line-height: 40px
 					padding: 0
-					+sprite($envelope)
+					//+sprite($envelope)
+					width: 32px
+					height: 24px
+					background: url('../img/envelope.png') no-repeat center
+					background-size: cover
 					top: 50%
 					transform: translateY(-50%)
 					right: 6px 
 					+r(1980)
 						height: 70px
 						width: 93px
-						border: 1px solid red
+						//border: 1px solid red
 					+r(1199)
 						height: 34px
 						width: 45px
