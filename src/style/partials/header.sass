@@ -15,12 +15,17 @@
 		vertical-align: middle
 		line-height: 0
 		//margin-bottom: 15px
-		+sprite($logo)
+		//+sprite($logo)
+		background: url('../img/logo.png') no-repeat center
+		height: 169px
+		width: 140px
 		+r(1980)
 			display: none
 		+r(1199)
 			display: inline-block
 			height: 128px
+			//width: auto
+			background-size: contain
 			//margin-left: auto
 		+r(767)
 			display: none
@@ -147,12 +152,23 @@
 			&__icon
 				display: inline-block
 				margin-bottom: 9px
-				+sprite($login)
+				//+sprite($login)
+				background: url('../img/login.png') no-repeat center
+				height: 32px
+				width: 32px
+				+r(1600)
+					height: 22px
+					width: 25px
+					background-size: contain
+					background-position: 0% 50%
+					margin-bottom: 5px
 			&__text
 				display: block
 				font-size: 18px
 				font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 				color: #fff
+				+r(1599)
+					font-size: 11px
 		.reg
 			//vertical-align: middle
 			display: inline-block
@@ -165,12 +181,22 @@
 			&__icon
 				display: inline-block
 				margin-bottom: 9px
-				+sprite($register)
+				//+sprite($register)
+				background: url('../img/register.png') no-repeat center
+				height: 32px
+				width: 32px
+				+r(1599)
+					height: 22px
+					width: 25px
+					background-size: contain	
+					margin-bottom: 5px			
 			&__text
 				display: block
 				font-size: 18px
 				font-family: 'Lato-Light', Arial, Helvetica, sans-serif
 				color: #fff
+				+r(1599)
+					font-size: 11px
 	.cols
 		display: flex
 		justify-content: center
