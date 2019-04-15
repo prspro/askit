@@ -26,6 +26,7 @@
 			width: 215.4px
 		+r(1599)
 			height: 169px
+			background-size: contain
 		+r(1199)
 			height: 128px
 			margin-bottom: 35px
@@ -80,31 +81,16 @@
 					//margin-left: 0
 					//margin-right: 0
 				.icon
-					display: inline-block
-					height: 32px
-					width: 32px
-					+r(1980)
-						height: 93px
-						width: 93px
-					+r(1199)
-						height: 45px
-						width: 45px
-					&--twitter
-						//+sprite($twitt)
-						background: url('../img/twitt.png') no-repeat center
-						background-size: cover
-					&--pinterest
-						//+sprite($pin)
-						background: url('../img/pin.png') no-repeat center
-						background-size: cover
-					&--in
-						//+sprite($in)
-						background: url('../img/in.png') no-repeat center
-						background-size: cover
-					&--fb
-						//+sprite($facebook)
-						background: url('../img/facebook.png') no-repeat center
-						background-size: cover
+					//display: inline-block
+					//height: 32px
+					//width: 32px
+					.fico
+						color: white
+						font-size: 32px
+						+r(1980)
+							font-size: 93px
+						+r(1199)
+							font-size: 45px
 			.links
 				&__item
 					display: block
@@ -177,8 +163,9 @@
 					//+sprite($envelope)
 					width: 32px
 					height: 24px
-					background: url('../img/envelope.png') no-repeat center
-					background-size: cover
+					background: url('../img/svg/envelope2.svg')
+					background-size: 100% 100%
+					//background-color: #fff
 					top: 50%
 					transform: translateY(-50%)
 					right: 6px 
@@ -192,8 +179,6 @@
 					+r(767)
 						width: 32px
 						height: 24px
-					&:hover
-						cursor: pointer
 			&--logo-col
 				text-align: center
 				padding-top: 0

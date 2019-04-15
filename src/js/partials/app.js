@@ -12,7 +12,16 @@ $(document).ready(function() {
       autoplay: true,
       autoplaySpeed: 2000,
       prevArrow: '<div class="arrow arrow--left"></div>',
-      nextArrow: '<div class="arrow arrow--right"></div>'
+      nextArrow: '<div class="arrow arrow--right"></div>',
+      responsive: [
+        {
+          breakpoint: 1760,
+          settings: {
+            arrows: false,
+            slidesToShow: 5
+          }
+        }
+      ]
     };
     if (screenWidth > 1200) {
       carousel.slick(slickConfig);
